@@ -15,7 +15,7 @@ header h1 {
   margin: 0;
 }
 .titulo h1 {
-  font-size :150px; 
+  font-size :80px; 
   margin-bottom: -40px;     
 }
 .titulo{
@@ -66,15 +66,34 @@ main {
 }
 
 .aula h2 {
-  color: #c8102e; 
+  color: #DAA520; 
   font-size: xx-large;
 }
 
 footer {
-  background-color: #c8102e; 
+  background-color: #DAA520; 
   text-align: center;
   padding: 10px;
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+table {
+  width: center;
+  height: center;
+  margin: 70px;
+}
+
+.logo {
+  width: center;
+  height: 250px;
+  text-align: center;
+}
+
+.texto1 {
+  width: center;
+  height: 0px;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
