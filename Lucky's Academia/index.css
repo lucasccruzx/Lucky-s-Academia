@@ -2,72 +2,60 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a; 
-  color: #fff; 
+  background-color: #f4f4f4; 
+  color: #333; 
 }
 
 header {
   background-color: #DAA520; 
-  
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
-}
-.titulo h1 {
-  font-size :80px; 
-  margin-bottom: -40px;     
-}
-.titulo{
-  margin: 10px;
-}
-.titulo img{
-  width: 150px;
-  height: 150px;
-  margin: 50px;
-
-}
-.titulo .subt{
-  font-size :50px; 
-  font-family: "The Quick Brown Fox Jumps Over The Lazy Dog	"; 
-  line-height:"10px"
+  font-size: 48px;
 }
 
-nav ul {    
+header nav ul {
   list-style-type: none;
   padding: 0;
 }
 
-.subt ul li {
+header nav ul li {
   display: inline;
   margin: 0 15px;
 }
 
-.subt ul li a {
+header nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.texto1 {
+  text-align: center;
+  margin: 20px 0;
 }
 
 main {
-  padding: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
 .aula {
-  background-color: #333; 
+  background-color: #fff; 
   margin: 20px 0;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
-  width: 1400px;
-  height: 500px;
-
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
 }
 
 .aula h2 {
   color: #DAA520; 
-  font-size: xx-large;
 }
 
 footer {
@@ -75,25 +63,51 @@ footer {
   text-align: center;
   padding: 10px;
   position: relative;
-  bottom: 0;
-  width: 100%;
+  bottom: 0
 }
 
-table {
-  width: center;
-  height: center;
-  margin: 70px;
+/* From Uiverse.io by vinodjangid07 */ 
+.button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
 }
 
-.logo {
-  width: center;
-  height: 250px;
-  text-align: center;
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
 }
 
-.texto1 {
-  width: center;
-  height: 0px;
-  text-align: center;
-  font-family: Arial, sans-serif;
+.bell path {
+  fill: rgb(19, 19, 19);
 }
+
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
