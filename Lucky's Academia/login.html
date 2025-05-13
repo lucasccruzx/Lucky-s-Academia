@@ -1,56 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro JS </title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
 </head>
-
 <body>
-    <form>
-
-        <h3>Cadastro</h3>
-        <input type="text" placeholder="nome" id="nome">
-        <input type="text" placeholder="Login" id="login">
-        <input type="password" placeholder="Senha" id="senha">
-        <input type="number" placeholder="Telefone" id="tel">
-        <input type="text" placeholder="Email" id="mail">
-        <input type="submit" onclick="logar(); return false">
+  <div class="container" role="main">
+    <div class="logo" aria-label="logo"></div>
+    <form aria-labelledby="loginTitle" novalidate>
+      <h1 id="loginTitle" class="login-title">Entrar no Spotify</h1>
+      <label for="email">Endereço de e-mail ou nome de usuário</label>
+      <input type="text" id="email" name="email" placeholder="Você pode usar o e-mail ou nome de usuário" autocomplete="username" required />
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password" placeholder="Sua senha" autocomplete="current-password" required />
+      <button type="submit">Entrar</button>
+      <div class="form-footer">
+        Não tem uma conta? <a href="https://www.spotify.com/br/signup" target="_blank" rel="noopener noreferrer">Inscreva-se grátis</a>
+      </div>
     </form>
-    <script>
-        function logar() {
-
-            
-            var nome = document.getElementById('nome').value;
-            var tel = document.getElementById('tel').value;
-            var mail = document.getElementById('mail').value;
-            var login = document.getelementbyid('login').value;
-            var senha = document.getelementebyid('senha').value;
-
-            if (!login||!senha){
-                alert('ERROR');
-                retur;
-            }
-            set(ref(DB 'usuarios' + login),{
-                login:login
-                senha:senha
-            })
-
-            then ((){
-                alert ("usuario cadastrado com sucesso")
-                location.href="index.html"
-            }
-            catcm (error)={
-                console.error("erro ao cadastrar")error;
-            })
-            
-
-        }
-
-    </script>
+  </div>
 </body>
-
 </html>
+
