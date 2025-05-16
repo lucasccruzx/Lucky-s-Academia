@@ -6,7 +6,7 @@
     }
     body {
       margin: 0;
-      background: radial-gradient(ellipse at center, #1db954 0%, #121212 100%);
+      background: radial-gradient(ellipse at center, #8B0000 0%, #121212 100%);
       font-family: 'Montserrat', sans-serif;
       color: #fff;
       -webkit-font-smoothing: antialiased;
@@ -22,7 +22,7 @@
     .container {
       background: #181818ee;
       border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(29, 185, 84, 0.6);
+      box-shadow: 0 8px 24px #DC143C;
       width: 100%;
       max-width: 420px;
       padding: 40px 35px 48px;
@@ -36,7 +36,7 @@
       text-align: center;
       margin: 0 0 20px;
       letter-spacing: 0.04em;
-      text-shadow: 0 0 6px #1DB954cc, 0 0 12px #1DB954aa;
+      text-shadow: 0 0 6px #8B0000	, 0 0 12px #8B0000	;
     }
 
     form {
@@ -79,9 +79,9 @@
     input:focus,
     select:focus {
       background: #333333;
-      border-color: #1DB954;
+      border-color: #ff0000;
       color: #fff;
-      box-shadow: 0 0 8px #1DB954aa;
+      box-shadow: 0 0 8px #8B0000;
     }
 
     .dob-gender {
@@ -116,19 +116,19 @@
       transition: color 0.3s ease;
     }
     .radio-group label:hover {
-      color: #1DB954;
+      color: #8B0000;
     }
 
     .radio-group input[type="radio"] {
       cursor: pointer;
       width: 18px;
       height: 18px;
-      accent-color: #1DB954;
+      accent-color: #8B0000;
     }
 
     button {
       margin-top: 36px;
-      background: linear-gradient(90deg, #1ed760, #1db954);
+      background: linear-gradient(90deg, #8B0000, #8B0000);
       border: none;
       color: #fff;
       font-weight: 700;
@@ -137,19 +137,19 @@
       border-radius: 30px;
       cursor: pointer;
       transition: background 0.4s ease, box-shadow 0.4s ease;
-      box-shadow: 0 6px 20px rgba(29, 215, 96, 0.65);
+      box-shadow: 0 6px 20px #B22222;
       user-select: none;
       text-transform: uppercase;
       letter-spacing: 0.06em;
     }
     button:hover,
     button:focus {
-      background: linear-gradient(90deg, #1db954, #1ed760);
-      box-shadow: 0 8px 28px rgba(29, 215, 96, 0.85);
+      background: linear-gradient(90deg, #B22222, #B22222);
+      box-shadow: 0 8px 28px #A52A2A;
       outline: none;
     }
     button:active {
-      box-shadow: 0 4px 12px rgba(29, 215, 96, 0.75);
+      box-shadow: 0 4px 12px #8B0000;
       transform: translateY(1px);
     }
 
@@ -162,14 +162,14 @@
       user-select: none;
     }
     .footer-text a {
-      color: #1DB954;
+      color: #8B0000;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s ease;
     }
     .footer-text a:hover,
     .footer-text a:focus {
-      color: #18ae47;
+      color: #B22222;
       text-decoration: underline;
       outline: none;
     }
@@ -182,14 +182,14 @@
       user-select: none;
     }
     .login-link a {
-      color: #1DB954;
+      color: #8B0000;
       font-weight: 600;
       text-decoration: none;
       transition: color 0.3s ease;
     }
     .login-link a:hover,
     .login-link a:focus {
-      color: #18ae47;
+      color: #B22222;
       outline: none;
       text-decoration: underline;
     }
