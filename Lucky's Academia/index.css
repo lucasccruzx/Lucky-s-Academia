@@ -6,7 +6,8 @@ body {
   padding: 0;
 }
 
-header {
+header, footer {
+  padding: 20px; /* Preenchimento interno para header e footer */
   background-color: #8B0000; /* Verde do Spotify */
   padding: 20px;
   text-align: center;
@@ -66,4 +67,10 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+.container {
+  max-width: 1200px; /* Largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner */
+  padding: 20px; /* Preenchimento interno */
 }
